@@ -1,0 +1,119 @@
+fileFormatVersion: 2
+guid: 420680efc309a8b4fa31bc236323057a
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: foliage_ground_cover/foliage_ground_cover
+    400000: foliage_ground_cover/foliage_ground_cover/Transform
+    2100000: mat.Foliage Ground Cover
+    2300000: foliage_ground_cover/foliage_ground_cover/MeshRenderer
+    2800000: Foliage Ground Cover_baseColor
+    2800002: Foliage Ground Cover_normal
+    2800004: Foliage Ground Cover_metallic
+    2800006: Foliage Ground Cover_ambientOcclusion
+    2800008: Foliage Ground Cover_height
+    3300000: foliage_ground_cover/foliage_ground_cover/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: foliage_ground_cover/foliage_ground_cover/SphereCollider
+    100100000: foliage_ground_cover
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Foliage Ground Cover
+    prototypeName: Foliage Ground Cover
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://foliage_ground_cover\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Foliage Ground Cover_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Foliage Ground Cover_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Foliage Ground Cover_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Foliage Ground Cover_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Foliage Ground Cover_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Foliage Ground Cover_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Foliage Ground Cover_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Foliage Ground Cover_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Foliage Ground Cover_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 420680efc309a8b4fa31bc236323057a, type: 3}
+    generatedTextures: []

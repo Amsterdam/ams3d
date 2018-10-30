@@ -1,0 +1,91 @@
+fileFormatVersion: 2
+guid: eaf66178d5a8e844d82632aab286892b
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: ground_pebbles_cemented/ground_pebbles_cemented
+    400000: ground_pebbles_cemented/ground_pebbles_cemented/Transform
+    2100000: 'mat.Cemented Pebbles '
+    2300000: ground_pebbles_cemented/ground_pebbles_cemented/MeshRenderer
+    2800000: Cemented Pebbles _Base Color
+    2800002: Cemented Pebbles _Normal
+    2800004: Cemented Pebbles _Metallic
+    2800006: Cemented Pebbles _Height
+    3300000: ground_pebbles_cemented/ground_pebbles_cemented/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: ground_pebbles_cemented/ground_pebbles_cemented/SphereCollider
+    100100000: ground_pebbles_cemented
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: 'Cemented Pebbles '
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://ground_pebbles_cemented\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {instanceID: 0}

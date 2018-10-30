@@ -1,0 +1,119 @@
+fileFormatVersion: 2
+guid: 9bca6a0d258ca804198007f0f9ae447d
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: concrete_pathway_bricks/concrete_pathway_bricks
+    400000: concrete_pathway_bricks/concrete_pathway_bricks/Transform
+    2100000: mat.Pathway Bricks Lined
+    2300000: concrete_pathway_bricks/concrete_pathway_bricks/MeshRenderer
+    2800000: Pathway Bricks Lined_baseColor
+    2800002: Pathway Bricks Lined_normal
+    2800004: Pathway Bricks Lined_metallic
+    2800006: Pathway Bricks Lined_ambientOcclusion
+    2800008: Pathway Bricks Lined_height
+    3300000: concrete_pathway_bricks/concrete_pathway_bricks/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: concrete_pathway_bricks/concrete_pathway_bricks/SphereCollider
+    100100000: concrete_pathway_bricks
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Pathway Bricks Lined
+    prototypeName: Pathway Bricks Lined
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://concrete_pathway_bricks\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Pathway Bricks Lined_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pathway Bricks Lined_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pathway Bricks Lined_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pathway Bricks Lined_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pathway Bricks Lined_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pathway Bricks Lined_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pathway Bricks Lined_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pathway Bricks Lined_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pathway Bricks Lined_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 9bca6a0d258ca804198007f0f9ae447d, type: 3}
+    generatedTextures: []
