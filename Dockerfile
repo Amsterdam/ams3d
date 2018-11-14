@@ -25,7 +25,7 @@ RUN git config --global url."https://".insteadOf git:// && \
     npm --production=false --unsafe-perm install && \
     chmod -R u+x node_modules/.bin/
 
-COPY . /app
+#COPY . /app
 
 RUN npm run build && cp -r /app/dist/. /var/www/html/
 
