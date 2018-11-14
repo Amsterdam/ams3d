@@ -15,7 +15,7 @@ RUN apt-get update && \
     xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 && \
   rm -rf /var/lib/apt/lists/*
 
-COPY package.json /app/
+#COPY package.json /app/
 
 WORKDIR /app
 
