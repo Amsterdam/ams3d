@@ -1,4 +1,5 @@
-FROM node:8.9
+#FROM node:8.9
+FROM hyperknot/baseimage16:1.0.6
 
 MAINTAINER datapunt.ois@amsterdam.nl
 
@@ -15,7 +16,7 @@ RUN apt-get update && \
     xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 && \
   rm -rf /var/lib/apt/lists/*
 
-#COPY package.json /app/
+COPY package.json /app/
 
 WORKDIR /app
 
@@ -25,9 +26,9 @@ RUN git config --global url."https://".insteadOf git:// && \
     npm --production=false --unsafe-perm install && \
     chmod -R u+x node_modules/.bin/
 
-#COPY . /app
+COPY . /app
 
-#RUN npm run build && cp -r /app/dist/. /var/www/html/
+RUN npm run build && cp -r /app/dist/. /var/www/html/
 
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
