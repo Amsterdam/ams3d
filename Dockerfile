@@ -1,11 +1,8 @@
-FROM node:8.9
-#FROM hyperknot/baseimage16:1.0.6
+FROM node:10.7
 
 MAINTAINER datapunt.ois@amsterdam.nl
 
 EXPOSE 80
-
-RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends apt-utils
 
 RUN apt-get update && \
   apt-get upgrade -y --no-install-recommends && \
@@ -30,11 +27,11 @@ RUN git config --global url."https://".insteadOf git:// && \
 
 COPY . /app
 
-RUN npm run build && cp -r /app/dist/. /var/www/html/
+#RUN npm run build && cp -r /app/dist/. /var/www/html/
 
 # forward request and error logs to docker log collector
-RUN ln -sf /dev/stdout /var/log/nginx/access.log \
- && ln -sf /dev/stderr /var/log/nginx/error.log
+#RUN ln -sf /dev/stdout /var/log/nginx/access.log \
+ #&& ln -sf /dev/stderr /var/log/nginx/error.log
 
-COPY default.conf /etc/nginx/conf.d/
-CMD ["nginx", "-g", "daemon off;"]
+#COPY default.conf /etc/nginx/conf.d/
+#CMD ["nginx", "-g", "daemon off;"]
