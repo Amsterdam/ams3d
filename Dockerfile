@@ -1,9 +1,11 @@
-#FROM node:8.9
-FROM hyperknot/baseimage16:1.0.6
+FROM node:8.9
+#FROM hyperknot/baseimage16:1.0.6
 
 MAINTAINER datapunt.ois@amsterdam.nl
 
 EXPOSE 80
+
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends apt-utils
 
 RUN apt-get update && \
   apt-get upgrade -y --no-install-recommends && \
